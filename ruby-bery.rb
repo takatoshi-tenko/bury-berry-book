@@ -22,9 +22,30 @@ dimensions = [
   [50, 60]
 ]
 areas = []
-dimensions.each do |dimension|
-  length = dimension[0]
-  width = dimension[1]
-  areas << length * width
+# dimensions.each do |dimension|
+#   length = dimension[0]
+#   width = dimension[1]
+#   areas << length * width
+# end
+# pp areas
+
+# dimensions.each do |length, width|  # 引数を2つ取ることで処理を簡略化できる
+#   areas << length * width
+# end
+# pp areas
+
+dimensions.each_with_index do |(length, width), i|
+  puts "length: #{length}, width: #{width}, i: #{i}"
 end
-pp areas
+
+
+
+
+
+
+
+
+
+
+
+
