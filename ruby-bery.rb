@@ -5,7 +5,7 @@
 # puts c
 
 # 2024/07/19
-fruits = ['apple', 'banana', 'cherry']
+# fruits = ['apple', 'banana', 'cherry']
 # pp 'each_with_index', fruits.each_with_index { |fruit, i| puts "#{i}: #{fruit}" }
 # pp 'map.with_index', fruits.map.with_index { |fruit, i| "#{i}: #{fruit}" }
 
@@ -84,9 +84,35 @@ fruits = ['apple', 'banana', 'cherry']
 
 # pp a.delete(100) { 'NG' }
 
-name = ["佐藤", "鈴木", "田中"]
-san_name =  name.map { |name| "#{name}さん" }.join('と')
-pp san_name
+# name = ["佐藤", "鈴木", "田中"]
+# san_name =  name.map { |name| "#{name}さん" }.join('と')
+# pp san_name
 
+# numbers = [10, 20, 30, 40, 50]
 
+# p numbers[..1]
 
+# sum = 0
+
+# pp 5.times { |n| puts sum += n }
+
+a = []
+# 10.upto(14) { |n| a << n }
+# p a
+# 14.downto(10) { |n| a << n }
+# p a
+# 10.step(1, -2) { |n| a << n }
+# p a
+# while a.size < 5
+#   a << 1
+# end
+# while a.size < 5 do a << 1 end
+# a << 1 while a.size < 5
+# begin 
+#   a << 1
+# end while false
+# a = [10, 20, 30, 40, 50]
+# until a.size <= 3
+#   a.delete_at(-1)
+# end
+p a
