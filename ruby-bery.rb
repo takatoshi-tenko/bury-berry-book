@@ -115,4 +115,10 @@ a = []
 # until a.size <= 3
 #   a.delete_at(-1)
 # end
-p a
+
+numbers = [1, 2, 3, 4, 5]
+sum = 0
+for n in numbers
+  sum += n
+end
+p sum
