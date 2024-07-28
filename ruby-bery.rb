@@ -155,5 +155,108 @@
 # p Enumerator.include?(Enumerable)
 
 
+# 4.11 繰り返し処理用の制御構造
+# numbers = [1, 2, 3, 4, 5].shuffle
+# numbers.each do |n|
+#   puts n
+#   break if n == 3
+# end
+
+fruits = ['apple', 'banana', 'cherry']
+numbers = [1, 2, 3]
+# fruits.each do |fruit|
+#   numbers.shuffle.each do |n|
+#     puts "#{fruit}, #{n}"
+#     break if n == 3
+#   end
+# end
+
+# catch :done do
+#   fruits.shuffle.each do |fruit|
+#     numbers.shuffle.each do |n|
+#       puts "#{fruit}, #{n}"
+#       if fruit == 'banana' && n == 3
+#          puts "#{fruit}, #{n}"
+#          puts "bananaと3が揃ったので脱出します"
+#         throw :done
+#       end
+#     end
+#   end
+# end
+
+# ret = 
+# catch :done do
+#   throw :done
+# end
+# p ret
+
+# ret = 
+# catch :done do
+#   throw :done, 123
+# end
+# p ret
+
+def green(country)
+  return 'countryを入力してください' if country.nil?
+
+  if country == 'japan'
+    'こんにちは'
+  else
+    'hello'
+  end
+end
+
+# def calc_with_break
+#   numbers = [1, 2, 3, 4, 5, 6]
+#   target = nil
+#   numbers.shuffle.each do |n|
+#     target = n
+#     break if n.even?
+#   end
+#   target * 10
+# end
+# p calc_with_break
+
+# def calc_with_return
+#   numbers = [1, 2, 3, 4, 5, 6]
+#   target = nil
+#   numbers.shuffle.each do |n|
+#     target = n
+#     return if n.even?
+#   end
+#   target * 10
+# end
+# p calc_with_return
+
+# [1,2,3].each do |n|
+#   puts n
+#   return
+# end
+
+# numbers = [1, 2, 3, 4, 5]
+# numbers.each do |n|
+#   next if n.even?
+#   puts n
+# end
+
+# foods = ['ピーマン', 'トマト', 'セロリ']
+# count = 0
+# foods.each do |food|
+#   print "#{food}は好きですか？ =>"
+#   answer = ['はい', 'いいえ'].sample
+#   puts answer
+
+#   count += 1
+#   redo if answer != 'はい' && count < 2
+
+#   count = 0
+# end
+
+
+
+
+
+
+
 
 
