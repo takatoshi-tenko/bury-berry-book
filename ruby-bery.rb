@@ -96,7 +96,7 @@
 
 # pp 5.times { |n| puts sum += n }
 
-a = []
+# a = []
 # 10.upto(14) { |n| a << n }
 # p a
 # 14.downto(10) { |n| a << n }
@@ -116,9 +116,44 @@ a = []
 #   a.delete_at(-1)
 # end
 
-numbers = [1, 2, 3, 4, 5]
-sum = 0
-for n in numbers
-  sum += n
-end
-p sum
+# numbers = [1, 2, 3, 4, 5]
+# sum = 0
+# for n in numbers
+#   sum += n
+# end
+# p sum
+
+# for n in numbers do sum += n end
+# numbers.each do |n|
+#   sum += n
+# end
+# p sum
+
+# numbers = [1, 2, 3, 4, 5]
+# loop do
+#   n = numbers.sample
+#   puts n
+#   break if n == 5
+# end
+
+# def factorial(n)
+#   n > 0 ? n * factorial(n - 1) : 1
+# end
+# p factorial(5)
+# p factorial(0)
+
+# p (1..4).map { |n| n * 10 }
+# p 1.upto(4).select { |n| n.odd? }
+
+# p [1,2,3].class
+# p Array.include?(Enumerable)
+
+# p (1..3).class
+# p Range.include?(Enumerable)
+
+# p 1.upto(3).class
+# p Enumerator.include?(Enumerable)
+
+
+
+
