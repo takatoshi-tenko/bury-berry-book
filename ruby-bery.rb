@@ -162,8 +162,8 @@
 #   break if n == 3
 # end
 
-fruits = ['apple', 'banana', 'cherry']
-numbers = [1, 2, 3]
+# fruits = ['apple', 'banana', 'cherry']
+# numbers = [1, 2, 3]
 # fruits.each do |fruit|
 #   numbers.shuffle.each do |n|
 #     puts "#{fruit}, #{n}"
@@ -196,15 +196,15 @@ numbers = [1, 2, 3]
 # end
 # p ret
 
-def green(country)
-  return 'countryを入力してください' if country.nil?
+# def green(country)
+#   return 'countryを入力してください' if country.nil?
 
-  if country == 'japan'
-    'こんにちは'
-  else
-    'hello'
-  end
-end
+#   if country == 'japan'
+#     'こんにちは'
+#   else
+#     'hello'
+#   end
+# end
 
 # def calc_with_break
 #   numbers = [1, 2, 3, 4, 5, 6]
@@ -252,7 +252,59 @@ end
 #   count = 0
 # end
 
+# convert_length(1, 'm', 'in')
+# convert_length(15, 'in', 'm')
+# convert_length(35000, 'ft', 'm')
 
+# h = {
+#   'japan' => 'yen',
+#   'us' => 'dollar',
+#   'india' => 'rupee'
+# }
+
+# h['italy'] = 'euro'
+
+# h.each do |key_value|
+#   key = key_value[0]
+#   value = key_value[1]
+#   puts "#{key}の通貨は#{value}です"
+# end
+
+# p h.size
+
+# string = 'apple'
+# string.upcase!
+# p string
+# symbol = :apple
+# symbol.upcase!
+# p symbol
+
+# status = 2
+# case status
+# when 0
+#   p 'これからやる'
+# when 1
+#   p '実行中'
+# when 2
+#   p '完了'
+# end
+
+# hash = {"abc" => 123, def: 456}
+# p hash['abc']
+# p hash[:def]
+
+# def buy_burger(menu, drink, potato)
+#   if potato
+#     'ポテトつき'
+#   end
+#   if drink
+#     'ハンバーガーとドリンク'
+#   end
+# end
+# p buy_burger('cheese', false, false)
+# p buy_burger('fish', true, false)
+
+params = { drink: true, potato: false }
 
 
 
