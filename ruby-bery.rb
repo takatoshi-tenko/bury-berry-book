@@ -306,8 +306,10 @@
 
 params = { drink: true, potato: false }
 
-
-
+currencies = { japan: 'yen', us: 'dooller', india: 'rupee' }
+p currencies.keys
+p currencies.values
+p currencies.has_key?(:japan)
 
 
 
