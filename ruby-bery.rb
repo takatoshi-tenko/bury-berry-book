@@ -591,3 +591,52 @@
 # pp alice.heavier_than?(bob)
 
 # pp 'JP'.hash
+
+# module Loggable
+#   def log(text)
+#     puts "[LOG] #{text}"
+#   end
+# end
+
+# class Product
+#   include Loggable
+
+#   def title
+#     log 'title is called.'
+#     'A great movie'
+#   end
+# end
+
+# class User
+#   include Loggable
+
+#   def name
+#     log 'name is called.'
+#     'Alice'
+#   end
+# end
+
+# product = Product.new
+# pp product.title
+# user = User.new
+# pp user.name
+
+# module Baseball
+#   class Second
+#     def initialize(player, uniform_number)
+#       @player = player
+#       @uniform_number = uniform_number
+#     end
+#   end
+# end
+
+# module Clock
+#   class Second
+#     def initialize(digits)
+#       @digits = digits
+#     end
+#   end
+# end
+
+# pp Baseball::Second.new('Alice', 13)
+# pp Clock::Second.new(13)
