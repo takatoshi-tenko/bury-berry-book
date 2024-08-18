@@ -291,7 +291,7 @@
 
 # hash = {"abc" => 123, def: 456}
 # p hash['abc']
-# p hash[:def]
+# p hash[:def
 
 # def buy_burger(menu, drink, potato)
 #   if potato
@@ -304,13 +304,15 @@
 # p buy_burger('cheese', false, false)
 # p buy_burger('fish', true, false)
 
-params = { drink: true, potato: false }
+# params = { drink: true, potato: false }
 
-currencies = { japan: 'yen', us: 'dooller', india: 'rupee' }
-p currencies.keys
-p currencies.values
-p currencies.has_key?(:japan)
+# currencies = { japan: 'yen', us: 'dooller', india: 'rupee' }
+# p currencies.keys
+# p currencies.values
+# p currencies.has_key?(:japan)
 
-
+# h = { us: 'dollar', india: 'rupee' }
+# { japan: 'yen', **h }
+# p h
 
 
