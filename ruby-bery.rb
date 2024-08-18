@@ -315,4 +315,66 @@
 # { japan: 'yen', **h }
 # p h
 
+# old_syntax = <<TEXT
+# {
+#   :name => "Alice",
+#   :age => 20,
+#   :gender => :female
+# }
+# TEXT
 
+# pp convert_hash_syntax(old_syntax)
+
+# text = <<TEXT
+# I love Ruby.
+# Python is a great language.
+# Java and JavaScript are different.
+# TEXT
+# pp text.scan(/[A-Z][A-Za-z]+/)
+
+# text = <<TEXT
+# 私の郵便番号は1234567です。
+# 僕の住所は6770056 兵庫県西脇市板波町1234だよ。
+# TEXT
+# pp text.gsub(/(\d{3})(\d{4})/) { "#{$1}-#{$2}"}
+
+# text = '私の誕生日は1977年7月17日です。'
+# text =~ /(\d+)年(\d+)月(\d+)日/
+# pp $~
+# pp $&
+
+# pp '123 456 789'.scan(/\d+/)
+# pp '1977年7月17日 2016年12月31日'.scan(/(\d+)年(\d+)月(\d+)日/)
+# pp '1977年7月17日 2016年12月31日'.scan(/(?:\d+)年(?:\d+)月(?:\d+)日/)
+# pp '1977年7月17日 2016年12月31日'.scan(/\d+年\d+月\d+日/)
+
+# text = '郵便番号は123-4567です'
+# pp text[/\d{3}-\d{4}/]
+
+# text = '123-4567 456-7890'
+# pp text[/\d{3}-\d{4}/]
+
+# text = '誕生日は1977年7月17日です'
+# pp text[/(\d+)年(\d+)月(\d+)日/, 3]
+
+# text = '郵便番号は123-4567です'
+# pp text.slice!(/\d{3}-\d{4}/)
+# pp text
+
+# text = '123,456-789'
+# pp text.split(',')
+# pp text.split(/,|-/)
+
+# text = '123,456-789'
+# pp text.gsub(',', ':')
+# pp text.gsub(/,|-/, ':')
+
+# text = '123,456-789'
+# text.gsub!(/,|-/, ':')
+# pp text
+
+# text = '誕生日は1977年7月17日です'
+# text.gsub!(/(\d+)年(\d+)月(\d+)日/) do
+#   "#{$1}-#{$2}-#{$3}"
+# end
+# pp text
