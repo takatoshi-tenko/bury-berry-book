@@ -456,11 +456,52 @@
 # pp user.name
 # pp user.age
 
+# class User
+#   def initialize(name)
+#     @name = name
+#   end
 
+#   def self.create_users(names)
+#     names.map do |name|
+#       User.new(name)
+#     end
+#   end
 
+#   def hello
+#     "Hello, I am #{@name}."
+#   end
+# end
 
+# names = ['Alice', 'Bob', 'Carol']
+# users = User.create_users(names)
+# u = users.each do |user|
+#   puts user.hello
+# end
+# pp u
 
+# class Product
+#   DEFAULT_PRICE = 1000
 
+#   attr_accessor :name, :price
+
+#   def self.default_price
+#     DEFAULT_PRICE + 10
+#   end
+
+#   def default_price
+#     DEFAULT_PRICE
+#   end
+
+#   # def initialize(name, price = DEFAULT_PRICE)
+#   #   @name = name
+#   #   @price = price
+#   # end
+# end
+# # product = Product.new('A free movie')
+# # pp product.price
+# pp Product.default_price
+# product_1 = Product.new
+# pp product_1.default_price
 
 
 
