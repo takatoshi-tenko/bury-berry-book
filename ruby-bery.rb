@@ -378,3 +378,27 @@
 #   "#{$1}-#{$2}-#{$3}"
 # end
 # pp text
+
+# Regexp.new('\d{3}-\d{4}')
+# /https:\/\/example\.com/
+# %r!http://example\.com!
+# %r{https;//example\.coom/}
+
+# pattern = '\d{3}-\d{4}'
+# p '123-4567' =~ /#{pattern}/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
