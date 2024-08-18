@@ -503,21 +503,91 @@
 # product_1 = Product.new
 # pp product_1.default_price
 
+# class User
+#   attr_accessor :name
 
+#   def initialize(name)
+#     @name = name
+#   end
 
+#   def hello
+#     "Hello, I am #{name}."
+#   end
 
+#   def hi
+#     "Hi, I am #{self.name}."
+#   end
 
+#   def my_name
+#     "My name is #{@name}."
+#   end
+# end
+# user = User.new('Alice')
+# pp user.hello
+# pp user.hi
+# pp user.my_name
 
+# class Product
+#   attr_reader :name, :price
 
+#   def initialize(name, price)
+#     @name = name
+#     @price = price
+#   end
+# end
 
+# product = Product.new('A great movie', 1000)
+# pp product.name
+# pp product.price
 
+# class DVD < Product
+#   attr_reader :running_time
 
+#   def initialize(name, price, running_time)
+#     @name = name
+#     @price = price
+#     @running_time = running_time
+#   end
+# end
 
+# dvd = DVD.new('A great movie', 1000, 120)
+# pp dvd.name
+# pp dvd.price
+# pp dvd.running_time
 
+# class User 
+#   class << self
+#     private
 
+#     def hello
+#       'Hello'
+#     end
+#   end
+# end
 
+# class User 
+#   def self.hello
+#     'Hello'
+#   end
 
+#   private_class_method :hello
+# end
 
+# class User 
+#   attr_reader :name
+#   protected attr_reader :weight
 
+#   def initialize(name, weight)
+#     @name = name
+#     @weight = weight
+#   end
 
+#   def heavier_than?(other_user)
+#     other_user.weight < @weight
+#   end
+# end
+# alice = User.new('Alice', 50)
+# bob = User.new('Bob', 60)
+# pp alice.heavier_than?(bob)
 
+# pp 'JP'.hash
