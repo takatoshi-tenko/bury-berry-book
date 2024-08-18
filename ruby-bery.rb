@@ -387,6 +387,84 @@
 # pattern = '\d{3}-\d{4}'
 # p '123-4567' =~ /#{pattern}/
 
+# class User 
+#   attr_reader :first_name, :last_name, :age
+
+#   def initialize(first_name, last_name, age)
+#     @first_name = first_name
+#     @last_name = last_name
+#     @age = age
+#   end
+
+#   def full_name(user)
+#     "#{user.first_name} #{user.last_name}"
+#   end
+# end
+
+# users = []
+# users << User.new('Alice', 'Ruby', 20)
+# users << User.new('Bob', 'Python', 30)
+
+
+# users.each do |user|
+#   puts "氏名: #{user.full_name}, 年齢: #{user.age}"
+# end
+# pp users
+
+# class User
+#   def initialize(name, age)
+#     puts "name: #{name}, age: #{age}"
+#   end
+# end
+# u = User.new('Alice', 20)
+# pp u
+
+# class User
+#   def initialize(name)
+#     @name = name
+#   end
+
+#   def name
+#     @name
+#   end
+
+#   def name=(value)
+#     @name = value
+#   end
+
+#   def hello 
+#     "Hello, I am #{@name}."
+#   end
+# end
+
+# user = User.new('Alice')
+# user.name = 'Bob'
+# pp user.name
+
+# class User
+#   attr_accessor :name, :age
+
+#   def initialize(name)
+#     @name = name
+#     @age = age
+#   end
+# end
+
+# user = User.new('Alice')
+# user.name = 'Bob'
+# user.age = 30
+# pp user.name
+# pp user.age
+
+
+
+
+
+
+
+
+
+
 
 
 
