@@ -692,3 +692,75 @@
 # rescue NoMethodError
 #   puts 'NoMethodErrorです'
 # end
+
+# class WordSynth
+#   def initialize
+#     @effects = []
+#   end
+
+#   def add_effect(effect)
+#     @effects << effect
+#   end
+
+#   def play(original_words)
+#     words = original_words
+#     @effects.each do |effect|
+#       words = effect.call(words)
+#     end
+#     puts words
+#   end
+# end
+
+# synth = WordSynth.new
+# synth.play('Ruby is fun!')
+# synth.play('Ruby is fun!!!!')
+
+# def greet
+#   puts 'おはよう'
+#   yield
+#   puts 'こんにちは'
+# end
+
+# greet do
+#   puts 'こんばんは'
+# end
+
+# def greet 
+#   puts 'おはよう'
+  
+#   text = yield 'こんにちは', 12345
+#   puts text
+#   puts 'こんばんは'
+# end
+
+# greet do |text|
+#   text * 2
+# end
+
+# def greet
+#   puts 'おはよう'
+#   text = yield 'こんにちは'
+#   puts text
+#   puts 'こんばんは'
+# end
+
+# greet do |text, other|
+#   text * 2 + other.inspect
+# end
+
+# hello_proc = Proc.new do
+#   'Hello!'
+# end
+
+# pp hello_proc.call
+
+# def greet(&block)
+#   puts 'おはよう'
+#   text = block.call('こんにちは')
+#   puts text
+#   puts 'こんばんは'
+# end
+
+# greet do |text|
+#   text * 2
+# end
