@@ -3,52 +3,52 @@
 # No. 15 2ずつカウントアップ
 # 整数値を入力させ、0から入力値を超えない値まで2ずつ増やして表示するプログラムを作成せよ。
 # # ここでユーザーからの入力を受け付ける
-print "ユーザーからの入力値："
+# print "ユーザーからの入力値："
 # その数字がnに代入される
-n = gets.to_i
+# n = gets.to_i
 # 0からnまで2ずつ増やす。stepを使うことで引数分スキップして増やせる
-(0..n).step(2) do |i|
-  puts i 
-end
+# (0..n).step(2) do |i|
+#   puts i 
+# end
 # --------------------------------
 # No. 16 0でおしまい
 # 整数値を入力させ、入力値が0でなければ再度入力させ、0であれば終了するプログラムを作成せよ。
-number = 1
-while number != 0
-  puts "input number:"
-  number = gets.to_i
-end
-puts "終了します"
+# number = 1
+# while number != 0
+#   puts "input number:"
+#   number = gets.to_i
+# end
+# puts "終了します"
 # --------------------------------
 # No. 17 配列を初期化
 # 要素数10の整数型の配列を宣言し、i番目の要素の初期値をiとし、順に値を表示するプログラムを作成せよ。
-array = Array.new(10)
-array.each_with_index do |num, i|
-  array[i] = i
-end
-puts array.join("\n")
+# array = Array.new(10)
+# array.each_with_index do |num, i|
+#   array[i] = i
+# end
+# puts array.join("\n")
 # --------------------------------
 # No. 18 配列を入力値で初期化
 # 要素数10の整数型の配列を宣言し、整数値を入力させ、すべての配列の要素を入力値として、すべての要素の値を表示するプログラムを作成せよ。
-array = Array.new(10)
-number = 6
-array.each_with_index do |num, i|
-  array[i] = number
-end
-puts array.join("\n")
+# array = Array.new(10)
+# number = 6
+# array.each_with_index do |num, i|
+#   array[i] = number
+# end
+# puts array.join("\n")
 # --------------------------------
 # No. 19 配列に入力値を格納
 # 要素数5の整数型の配列を宣言し、すべての配列に対して順に入力された整数値を代入し、すべての要素の値を表示するプログラムを作成せよ。
 # 箱用意
-array = Array.new(5)
+# array = Array.new(5)
 # 入力値
-numbers = Array.new(5) { rand(1..5)}
+# numbers = Array.new(5) { rand(1..5)}
 
-array.each_with_index do |num, i|
-  array[i] = numbers[i]
-end
+# array.each_with_index do |num, i|
+#   array[i] = numbers[i]
+# end
 # 出力結果
-puts array.join("\n")
+# puts array.join("\n")
 # --------------------------------
 
 # 初級編
@@ -56,50 +56,50 @@ puts array.join("\n")
 # No. 35 配列要素の参照
 # {3, 7, 0, 8, 4, 1, 9, 6, 5, 2}で初期化される大きさ10の整数型配列を宣言し、整数値を入力させ、
 # 要素番号が入力値である配列要素の値を表示するプログラムを作成せよ。入力値が配列の要素の範囲外であるかどうかのチェックは省略してよい。
-array = [3, 7, 0, 8, 4, 1, 9, 6, 5, 2]
-print "ユーザーによる入力:"
-n = gets.to_i
-puts array[n]
+# array = [3, 7, 0, 8, 4, 1, 9, 6, 5, 2]
+# print "ユーザーによる入力:"
+# n = gets.to_i
+# puts array[n]
 # --------------------------------
 # No. 36 続・配列要素の参照
 # {3, 7, 0, 8, 4, 1, 9, 6, 5, 2}で初期化される大きさ10の整数型配列を宣言し、整数値を2つ入力させ、
 # 要素番号が入力値である2つの配列要素の値の積を計算して表示するプログラムを作成せよ。入力値が配列の要素の範囲外であるかどうかのチェックは省略してよい。
-array = [3, 7, 0, 8, 4, 1, 9, 6, 5, 2]
-print "1個目の入力"
-n1 = gets.to_i
-print "2個目の入力"
-n2 = gets.to_i
-puts array[n1] * array[n2]
+# array = [3, 7, 0, 8, 4, 1, 9, 6, 5, 2]
+# print "1個目の入力"
+# n1 = gets.to_i
+# print "2個目の入力"
+# n2 = gets.to_i
+# puts array[n1] * array[n2]
 # --------------------------------
 # No. 37 続々・配列要素の参照
 # {3, 7, 0, 8, 4, 1, 9, 6, 5, 2}で初期化される大きさ10の整数型配列を宣言し、整数値を入力させ、
 # 要素番号が入力値の配列要素の値を参照し、さらにその参照した値を要素番号とする配列要素の値を参照して表示するプログラムを作成せよ。
 # 入力値が配列の要素の範囲外であるかどうかのチェックは省略してよい。
-array = [3, 7, 0, 8, 4, 1, 9, 6, 5, 2]
-print "ユーザー入力値:"
-n = gets.to_i
-puts array[array[n]]
+# array = [3, 7, 0, 8, 4, 1, 9, 6, 5, 2]
+# print "ユーザー入力値:"
+# n = gets.to_i
+# puts array[array[n]]
 # --------------------------------
 # No. 38 さらに・配列要素の参照
 # {3, 7, 0, 8, 4, 1, 9, 6, 5, 2}で初期化される大きさ10の整数型配列を宣言し、最初は参照する要素番号を0とし、
 # この参照する要素番号の配列要素の値を表示し、次にその配列要素の値を次の参照する要素番号とし、
 # この次の参照する要素番号の配列要素の値を表示し、さらにその配列要素の値を次の参照する要素番号とし、……を10回繰り返すプログラムを作成せよ。
 # （具体的にどのような手順かは実行例を見て考えよう。）
-array = [3, 7, 0, 8, 4, 1, 9, 6, 5, 2]
-print "ユーザー入力値:"
-number = gets.to_i
-result = 0
-10.times do |n, i|
-  puts number
-  result = array[number]
-  number = result
-end
+# array = [3, 7, 0, 8, 4, 1, 9, 6, 5, 2]
+# print "ユーザー入力値:"
+# number = gets.to_i
+# result = 0
+# 10.times do |n, i|
+#   puts number
+#   result = array[number]
+#   number = result
+# end
 # --------------------------------
 # No. 39 もっと・配列要素の参照
 # {3, 7, 0, 8, 4, 1, 9, 6, 5, 2}で初期化される大きさ10の整数型配列を宣言し、最初は参照する要素番号を0とする。
 # この参照する要素番号の配列要素の値から次の要素番号の配列要素の値を引いた値を表示し、参照する要素番号を1増やす。
 # この手順を9回繰り返すプログラムを作成せよ。（具体的にどのような手順かは実行例を見て考えよう。）
-array = [3, 7, 0, 8, 4, 1, 9, 6, 5, 2]
-9.times do |n|
-  puts array[n] - array[n+1]
-end
+# array = [3, 7, 0, 8, 4, 1, 9, 6, 5, 2]
+# 9.times do |n|
+#   puts array[n] - array[n+1]
+# end
