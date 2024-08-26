@@ -1,4 +1,105 @@
 # 基礎編
+# No. 00 ごあいさつ
+# 実行するとHello World!と表示するプログラムを作成せよ。
+# puts "Hello World!"
+# --------------------------------
+# No. 01 足し算
+# 12345+23456を計算して結果を表示するプログラムを作成せよ。
+# puts 12345 + 23456
+# --------------------------------
+# No. 02 余り
+# 12345を7で割った余りを表示するプログラムを作成せよ。
+# puts 12345 % 7
+# --------------------------------
+# No. 03 入力
+# 整数値を入力させ、その入力値を表示するプログラムを作成せよ。
+# print "input number: "
+# number = gets.to_i
+# puts "your number is #{number}"
+# --------------------------------
+# No. 04 入力と計算
+# 整数値を入力させ、その入力値を3倍した計算結果を表示するプログラムを作成せよ。
+# print "input number: "
+# number = gets.to_i
+# puts "answer = #{number * 3}"
+# --------------------------------
+# No. 05 四則演算
+# 整数値を2つ入力させ、それらの値の和、差、積、商と余りを求めるプログラムを作成せよ。なお、差と商は1つ目の値から2つ目の値を引いた、あるいは割った結果とする。余りは無い場合も0と表示するのでよい。
+# print "input 1st number: "
+# number_1 = gets.to_i
+# print "input 2nd number: "
+# number_2 = gets.to_i
+# puts "和: #{number_1 + number_2}"
+# puts "差: #{number_1 - number_2}"
+# puts "積: #{number_1 * number_2}"
+# puts "商: #{number_1 / number_2}, 余り: #{number_1 % number_2}"
+# --------------------------------
+# No. 06 0?
+# 整数値を入力させ、値が0ならzeroと表示するプログラムを作成せよ。
+# print "input number: "
+# number = gets.to_i
+# puts "zero" if number == 0
+# --------------------------------
+# No. 07 0 or not 0
+# 整数値を入力させ、値が0ならzero、0でなければnot zeroと表示するプログラムを作成せよ。
+# print "input number: "
+# number = gets.to_i
+# if number == 0
+#   puts "zero"
+# else
+#   puts "not zero"
+# end
+# --------------------------------
+# No. 08 正の整数?
+# 整数値を入力させ、値が正であればpositiveと表示するプログラムを作成せよ。ただし0は正には含まない。
+# print "input number: "
+# number = gets.to_i
+# puts "positive" if number > 0
+# --------------------------------
+# No. 09 正? 負? 0?
+# 整数値を入力させ、値が正であればpositive、負であればnegative、0であればzeroと表示するプログラムを作成せよ。
+# print "input number: "
+# number = gets.to_i
+# if number > 0
+#   puts "positive"
+# elsif number < 0
+#   puts "negative"
+# else
+#   puts "zero"
+# end
+# --------------------------------
+# No. 10 絶対値
+# 整数値を入力させ、その値を絶対値にして表示するプログラムを作成せよ。（できれば変数の値を絶対値に変えるようにせよ）
+# print "input number is: "
+# number = gets.to_i
+# puts "absolute value is #{number.abs}"
+# --------------------------------
+# No. 11 ごあいさつ10回
+# Hello World!を10回繰り返して表示するプログラムを作成せよ。
+# 10.times { puts "Hello World!" }
+# --------------------------------
+# No. 12 ごあいさつ指定回
+# 整数値を入力させ、その値の回数だけHello World!を繰り返して表示するプログラムを作成せよ。
+# print "input number: "
+# number = gets.to_i
+# number.times { puts "Hello World!" }
+# --------------------------------
+# No. 13 カウントアップ
+# 整数値を入力させ、0から入力値まで数を1ずつ増やして表示するプログラムを作成せよ。
+# print "input number: "
+# number = gets.to_i
+# number.times do |i|
+#   puts i
+# end
+# --------------------------------
+# No. 14 カウントダウン
+# 整数値を入力させ、入力値から0まで数を1ずつ減らして表示するプログラムを作成せよ。
+# print "input number: "
+# number = gets.to_i
+# number.times do |i|
+#   puts number - i
+# end
+# puts 0
 # --------------------------------
 # No. 15 2ずつカウントアップ
 # 整数値を入力させ、0から入力値を超えない値まで2ずつ増やして表示するプログラムを作成せよ。
