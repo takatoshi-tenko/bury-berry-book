@@ -362,3 +362,67 @@
 # 9.times do |n|
 #   puts array[n] - array[n+1]
 # end
+# --------------------------------
+# No. 40 even or odd
+# 整数値を入力させ、その値が偶数ならばeven、奇数ならばoddと表示するプログラムを作成せよ。
+# print "input value: "
+# n = gets.to_i
+# if n % 2 == 0
+#   puts "#{n} is even"
+# else
+#   puts "#{n} is odd"
+# end
+# --------------------------------
+# No. 41 1桁の自然数?
+# 整数値を入力させ、その値が一桁の自然数かそうでないか判定するプログラムを作成せよ。
+# print "input value:"
+# n = gets.to_i
+# if n > 0 && n < 10
+#   puts "#{n} is a single figure."
+# else
+#   puts "#{n} is not a single figure."
+# end
+# --------------------------------
+# No. 42 小さい順?
+# 整数値を3つ入力させ、それらの値が小さい順（等しくてもよい）に並んでいるか判定し、小さい順に並んでいる場合はOK、そうなっていない場合はNGと表示するプログラムを作成せよ。
+# print "input number 1:"
+# n1 = gets.to_i
+# print "input number 2:"
+# n2 = gets.to_i
+# print "input number 3:"
+# n3 = gets.to_i
+# if n1 <= n2 && n2 <= n3
+#   puts "OK"
+# else 
+#   puts "NG"
+# end
+# --------------------------------
+# No. 43 2次方程式の解の判別
+# 2次方程式 ax^2 + bx + c = 0 （x^2はxの2乗の意味）の係数a, b, cを入力し、2次方程式の解が2つの実数解か、重解か、2つの虚数解かを判別するプログラムを作成せよ。
+# print "input a:"
+# a = gets.to_i
+# print "input b:"
+# b = gets.to_i
+# print "input c:"
+# c = gets.to_i
+# d = b**2 - 4 * a * c
+# if d > 0
+#   puts "2つの実数解"
+# elsif d == 0
+#   puts "重解"
+# else
+#   puts "2つの虚数解"
+# end
+# --------------------------------
+# No. 44 通貨換算
+# 換算したい金額（円単位）と1ドル何円かを整数値で入力すると、入力した金額が何ドル何セントか計算して表示するプログラムを作成せよ。1セントは1/100ドルである。結果は整数値でよい（1セント未満の端数切り捨て）。
+# print "input yen:"
+# yen = gets.to_i
+# print "input dollar:"
+# dollar = gets.to_i
+# devide = yen / dollar
+# puts "#{devide}ドル#{yen % dollar * 100 / dollar}セント"
+# --------------------------------
+
+
+
