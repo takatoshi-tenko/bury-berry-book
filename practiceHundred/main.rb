@@ -532,9 +532,34 @@
 #   end
 # end
 # --------------------------------
-
+# No. 54 最大最小
+# まずデータの個数を入力させ、次にデータの個数だけ整数値を入力させる。
+# この入力データの中で最大値と最小値を求め表示するプログラムを作成せよ。
+# データの個数は100個までとする。なお、データの個数とデータはファイルからリダイレクトで入力させればよいので、
+# 入力のためのメッセージは不要である（実行例を参照すること）。
+# small_data = File.read('small.data')
+# middle_data = File.read('middle.data')
+# large_data = File.read('large.data')
+# small_array = small_data.split("\n")
+# middle_array = middle_data.split("\n")
+# large_array = large_data.split("\n")
+# puts small_array.max, small_array.min
+# puts middle_array.max, middle_array.min
+# puts large_array.max, large_array.min
 # --------------------------------
-
+# No. 55 夢想花again
+# 「とんで」を9回「まわって」を3回繰り返した後「まわる」と表示して改行する、を3回繰り返すプログラムを作成せよ。「とんで」「まわって」と3行文の繰り返しは必ず繰り返し構文を使うこと。
+# kashi = []
+# 3.times do |song|
+#   9.times do |tonde|
+#     kashi.push('とんで')
+#   end
+#   3.times do |mawatte|
+#     kashi.push('まわって')
+#   end
+#   kashi.push('まわる')
+# end
+# puts kashi
 # --------------------------------
 
 # --------------------------------
