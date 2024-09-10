@@ -549,17 +549,19 @@
 # --------------------------------
 # No. 55 夢想花again
 # 「とんで」を9回「まわって」を3回繰り返した後「まわる」と表示して改行する、を3回繰り返すプログラムを作成せよ。「とんで」「まわって」と3行文の繰り返しは必ず繰り返し構文を使うこと。
-# kashi = []
-# 3.times do |song|
-#   9.times do |tonde|
-#     kashi.push('とんで')
-#   end
-#   3.times do |mawatte|
-#     kashi.push('まわって')
-#   end
-#   kashi.push('まわる')
-# end
-# puts kashi
+kashi = []
+3.times do |song|
+  row = []
+  9.times do |tonde|
+    row.push('とんで')
+  end
+  3.times do |mawatte|
+    row.push('まわって')
+  end
+  row.push('まわる')
+  kashi.push(row.join(''))
+end
+puts kashi
 # --------------------------------
 
 # --------------------------------
