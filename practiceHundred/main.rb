@@ -582,13 +582,57 @@
 # No. 57 テスト集計
 # まず受験者数を入力させ、次に受験者数ごとに英語、数学、国語の点数をスペースで区切って入力させる
 # （具体的な入力方法は下記のscanfの使い方の説明、および入力データの中身を見よ）。
+# 【実行例、データファイルは下のリンクから取得せよ】
+# $ ./knock57 < examSmall.data
+# 平均点 英語:46, 数学:51, 国語:55
+# 個人合計点
+# 0: 141
+# 1: 114
+# （途中省略）
+# 8: 96
+# 9: 188
+# $ ./knock57 < examMiddle.data
+# 平均点 英語:55, 数学:53, 国語:54
+# 個人合計点
+# 0: 136
+# 1: 64
+# （途中省略）
+# 48: 265
+# 49: 167
+# $ ./knock57 < examLarge.data
+# 平均点 英語:52, 数学:51, 国語:51
+# 個人合計点
+# 0: 151
+# 1: 241
+# （途中省略）
+# 98: 107
+# 99: 178
 # 入力が終了したら、英語、数学、国語の平均点、および各受験生の合計点を計算して表示するプログラムを作成せよ。
 # 受験者数は100人までとする。なお、データの個数とデータはファイルから
 # リダイレクトで入力させればよいので、入力のためのメッセージは不要である
 # （実行例を参照すること）。
-
-
-
+data = File.read('examSmall.data')
+array = data.split("\n").drop(1)
+english_sum = 0
+math_sum = 0
+japanese_sum = 0
+sum = 0
+array.each_with_index do |line, i|
+  scores = line.split(' ')
+  english = scores[0].to_i
+  math = scores[1].to_i
+  japanese = scores[2].to_i
+  english_sum += english
+  math_sum += math
+  japanese_sum += japanese
+  sum += scores[0].to_i + scores[1].to_i + scores[2].to_i
+end
+puts "個人合計点"
+array.each_with_index do |line, i|
+  scores = line.split(' ')
+  puts "#{i}: #{scores[0].to_i + scores[1].to_i + scores[2].to_i}"
+end
+puts "平均点 英語:#{english_sum / array.size}, 数学:#{math_sum / array.size}, 国語:#{japanese_sum / array.size}"
 # --------------------------------
 
 # --------------------------------
