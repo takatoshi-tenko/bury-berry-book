@@ -611,29 +611,56 @@
 # 受験者数は100人までとする。なお、データの個数とデータはファイルから
 # リダイレクトで入力させればよいので、入力のためのメッセージは不要である
 # （実行例を参照すること）。
-data = File.read('examSmall.data')
-array = data.split("\n").drop(1)
-english_sum = 0
-math_sum = 0
-japanese_sum = 0
-sum = 0
-array.each_with_index do |line, i|
-  scores = line.split(' ')
-  english = scores[0].to_i
-  math = scores[1].to_i
-  japanese = scores[2].to_i
-  english_sum += english
-  math_sum += math
-  japanese_sum += japanese
-  sum += scores[0].to_i + scores[1].to_i + scores[2].to_i
-end
-puts "個人合計点"
-array.each_with_index do |line, i|
-  scores = line.split(' ')
-  puts "#{i}: #{scores[0].to_i + scores[1].to_i + scores[2].to_i}"
-end
-puts "平均点 英語:#{english_sum / array.size}, 数学:#{math_sum / array.size}, 国語:#{japanese_sum / array.size}"
+# data = File.read('examSmall.data')
+# array = data.split("\n").drop(1)
+# english_sum = 0
+# math_sum = 0
+# japanese_sum = 0
+# sum = 0
+# array.each_with_index do |line, i|
+#   scores = line.split(' ')
+#   english = scores[0].to_i
+#   math = scores[1].to_i
+#   japanese = scores[2].to_i
+#   english_sum += english
+#   math_sum += math
+#   japanese_sum += japanese
+#   sum += scores[0].to_i + scores[1].to_i + scores[2].to_i
+# end
+# puts "個人合計点"
+# array.each_with_index do |line, i|
+#   scores = line.split(' ')
+#   puts "#{i}: #{scores[0].to_i + scores[1].to_i + scores[2].to_i}"
+# end
+# puts "平均点 英語:#{english_sum / array.size}, 数学:#{math_sum / array.size}, 国語:#{japanese_sum / array.size}"
 # --------------------------------
+# No. 58 棒グラフ
+# 0以上の整数値を5つ入力させ、それぞれの値に対して、次の形式でグラフを描くプログラムを作成せよ。
+# 形式：左端に値を表示し、適切に空白を空けて":"を書く（:で揃えるためにタブ\tを使うとよい）。
+# その後ろに値の数だけ*を描くが、5個おきに空白を１つ入れる。具体例は下記の実行例を参照すること。
+print "input value: "
+n1 = gets.to_i
+print "input value: "
+n2 = gets.to_i
+print "input value: "
+n3 = gets.to_i
+print "input value: "
+n4 = gets.to_i
+print "input value: "
+n5 = gets.to_i
+num_array = [n1, n2, n3, n4, n5]
+num_array.size.times do |i|
+  array = []
+  num_array[i].times do |j|
+    if j % 5 == 0
+      array.push(' *')
+    else
+      array.push('*')
+    end
+  end
+  puts "#{num_array[i].to_s.rjust(2)}: #{array.join('')}"
+  array = []
+end
 
 # --------------------------------
 
