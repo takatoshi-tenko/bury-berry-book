@@ -638,31 +638,51 @@
 # 0以上の整数値を5つ入力させ、それぞれの値に対して、次の形式でグラフを描くプログラムを作成せよ。
 # 形式：左端に値を表示し、適切に空白を空けて":"を書く（:で揃えるためにタブ\tを使うとよい）。
 # その後ろに値の数だけ*を描くが、5個おきに空白を１つ入れる。具体例は下記の実行例を参照すること。
-print "input value: "
-n1 = gets.to_i
-print "input value: "
-n2 = gets.to_i
-print "input value: "
-n3 = gets.to_i
-print "input value: "
-n4 = gets.to_i
-print "input value: "
-n5 = gets.to_i
-num_array = [n1, n2, n3, n4, n5]
-num_array.size.times do |i|
-  array = []
-  num_array[i].times do |j|
-    if j % 5 == 0
-      array.push(' *')
-    else
-      array.push('*')
-    end
-  end
-  puts "#{num_array[i].to_s.rjust(2)}: #{array.join('')}"
-  array = []
-end
+# print "input value: "
+# n1 = gets.to_i
+# print "input value: "
+# n2 = gets.to_i
+# print "input value: "
+# n3 = gets.to_i
+# print "input value: "
+# n4 = gets.to_i
+# print "input value: "
+# n5 = gets.to_i
+# num_array = [n1, n2, n3, n4, n5]
+# num_array.size.times do |i|
+#   array = []
+#   num_array[i].times do |j|
+#     if j % 5 == 0
+#       array.push(' *')
+#     else
+#       array.push('*')
+#     end
+#   end
+#   puts "#{num_array[i].to_s.rjust(2)}: #{array.join('')}"
+#   array = []
+# end
 
 # --------------------------------
+# No. 59 行列の和
+# 3x3行列の和を求めて表示するプログラムを作成せよ。行列の値は2次元配列で表現し、繰り返しを使って計算すること。
+# 3x3行列とは縦3つ、横3つの9つの要素(値)をひとまとめにして扱うものである。2つの3x3行列の和は次式のように、それぞれ同じ位置にある値を足したものとして計算できる。
+# 例えばa12という要素は、1行目2列目の要素という意味である。それぞれ同じ位置にある要素を足せばよい。
+# なお、入力値は1行ずつ3つの値をスペースで区切って入力するようにするとよい。このためには、scanf("%d %d %d", &a[0][0], &a[0][1], &a[0][2]);のように書く(No. 57参照)。
+
+a = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+b = [[2, 3, 4], [5, 6, 7], [8, 9, 10]]
+c = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+3.times do |i|
+  3.times do |j|
+    c[i][j] = a[i][j] + b[i][j]
+  end
+end
+3.times do |i|
+  3.times do |j|
+    print "#{c[i][j]} "
+  end
+  puts "\n"
+end
 
 # --------------------------------
 
